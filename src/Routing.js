@@ -1,22 +1,21 @@
 import React from 'react';
-import {Route,BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import Home from './component/Home/Home';
-import Details from './component/details/listingApi';
-import DisplayApi from './component/details/HotelApi';
-import Listing from './component/booking/DisplayAPi';
+import Listing from './component/listing/listingApi';
+import Details from './component/details/HotelDetail';
+import DisplayApi from './component/booking/DisplayApi';
 import PlaceBooking from './component/booking/placeBooking';
 
-
-const Routing = ()=>{
-  return(
-    <BrowserRouter>
-    <Route exact path ="/" component={Home}/>
-    <Route exact path ="/listing/:id" component={Listing}/>
-    <Route exact path ="/details/:id" component={Details}/>
-    <Route exact path ="/viewbooking" component={DisplayApi}/>
-    <Route exact path ="/booking/:name" component={PlaceBooking}/>
-    </BrowserRouter>
-  )
+const Routing = () => {
+    return(
+        <BrowserRouter> 
+            <Route exact path="/" component={Home}/>
+            <Route path="/listing/:id" component={Listing}/>
+            <Route path="/details/:id" component={Details}/>
+            <Route path="/viewbooking" component={DisplayApi}/>
+            <Route path="/booking/:name" component={PlaceBooking}/>
+        </BrowserRouter>
+    )
 }
 
 export default Routing;
