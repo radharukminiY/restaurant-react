@@ -31,7 +31,7 @@ class Details extends Component{
                     <div className="panel-body">
                         <div className="row">
                             <div className="col-md-12">
-                                <img className="img-responsive" src={details.thumb}
+                                <img className="img-responsive" src={details.thumb} alt="img"
                                 style={{height:400,width:1500}}/>
                             </div>
                             <div className="col-md-6">
