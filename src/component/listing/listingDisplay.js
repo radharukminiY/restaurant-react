@@ -12,7 +12,7 @@ const ListingDisplay = (props) => {
               <div class="maindiv">
               <div class="image">
               <img src={item.thumb}
-              className="imgClass"/>
+              className="imgClass" alt="img"/>
               </div>
               <div className="details">
               <h1><Link to={`/details/${item._id}`}>
@@ -45,7 +45,7 @@ const ListingDisplay = (props) => {
         {
           return(
           <div>
-          <img src="/images/loading.gif"/>
+          <img src="/images/loading.gif" alt="img"/>
           </div>
           )
         }

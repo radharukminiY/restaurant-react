@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import axios from 'axios';
-import ViewBooking from './disolayBooking';
+import ViewBooking from './displayBooking';
 
 const url = "https://eduintern.herokuapp.com/orders"
 

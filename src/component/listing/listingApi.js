@@ -5,7 +5,7 @@ import Header from '../../Header';
 import CuisineFilter from '../filters/cuisineFilter';
 import CostFilter from '../filters/CostFilter'
 
-const url = "https://eduintern.herokuapp.com/rest?mealtype=";
+const url = "http://localhost:9900/rest?mealtype=";
 
 class ListingApi extends Component{
     constructor(props){
