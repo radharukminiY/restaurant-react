@@ -11,9 +11,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .quickSearchSubHeading{
-    color:gray;
+    text-overflow: inherit;
+    color:#000000;
     font-size:20px;
-    font-weight: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: .01;
 }
